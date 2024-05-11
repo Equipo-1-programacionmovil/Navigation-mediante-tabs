@@ -6,13 +6,13 @@ void main() {
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  const MainApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: page1(),
+      home: Page1(), // Aquí llamamos a Page1(), no a page1()
     );
   }
 }
